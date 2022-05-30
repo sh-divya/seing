@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pyseing
-Version: 0.1.7
+Version: 0.1.8
 Summary: SEING is a C/C++ package for fingerprint calculations suitable for machine learning studies of molecular systems.
 Home-page: https://seing.readthedocs.io/en/latest/
 Author: Mardochee Reveil

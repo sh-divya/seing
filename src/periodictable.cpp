@@ -13,9 +13,9 @@ using namespace std;
 PeriodicTable::PeriodicTable() { //Data from https://chem.libretexts.org/Reference/Periodic_Table_of_the_Elements
     //Please use the 1st ionization energy values with caution. Highly recommended to double check values
 
-    nelements = 36;
+    nelements = 73;
 
-    elements = new Element[36];
+    elements = new Element[73];
 
     Element Hydrogen    = {"Hydrogen",   "H",   1, 2.2,   1.00794,  1312.0};  elements[0] = Hydrogen;
     Element Helium      = {"Helium",     "He",  2, 0.0,   4.002602, 2372.3};  elements[1] = Helium;
@@ -56,7 +56,59 @@ PeriodicTable::PeriodicTable() { //Data from https://chem.libretexts.org/Referen
 
     Element Tungsten    = {"Tungsten",   "W",  74, 2.36, 183.84,     770.0};  elements[35] = Tungsten;
     
-
+    // Kit Ao: added in pyseing v0.1.8
+    Element Bromine     = {"Bromine",    "Br", 35, 2.96, 79.90,     1139.9};  elements[36] = Bromine;
+    Element Krypton     = {"Krypton",    "Kr", 36, 3.0,  83.80,     1350.0};  elements[37] = Krypton;
+    Element Rubidium    = {"Rubidium",   "Rb", 37, 0.82, 85.468,     403.0};  elements[38] = Rubidium;
+    Element Strontium   = {"Strontium",  "Sr", 38, 0.95, 87.62,      549.5};  elements[39] = Strontium;
+    Element Yttrium     = {"Yttrium",    "Y",  39, 1.22, 88.90584,   599.8};  elements[40] = Yttrium;
+    Element Zirconium   = {"Zirconium",  "Zr", 40, 1.33, 91.22,      640.1};  elements[41] = Zirconium;
+    Element Niobium     = {"Niobium",    "Nb", 41, 1.6,  92.906,     652.1};  elements[42] = Niobium;
+    Element Molybdenum  = {"Molybdenum", "Mo", 42, 2.16, 95.95,      684.3};  elements[43] = Molybdenum;
+    Element Technetium  = {"Technetium", "Tc", 43, 1.9,  96.906,     702.4};  elements[44] = Technetium;
+    Element Ruthenium   = {"Ruthenium",  "Ru", 44, 2.2,  101.1,      710.2};  elements[45] = Ruthenium;
+    Element Rhodium     = {"Rhodium",    "Rh", 45, 2.28, 102.91,     719.7};  elements[46] = Rhodium;
+    Element Palladium   = {"Palladium",  "Pd", 46, 2.2,  106.42,     804.4};  elements[47] = Palladium;
+    Element Silver      = {"Silver",     "Ag", 47, 1.93, 107.87,     731.0};  elements[48] = Silver;
+    Element Cadmium     = {"Cadmium",    "Cd", 48, 1.69, 112.41,     867.8};  elements[49] = Cadmium;
+    Element Tin         = {"Tin",        "Sn", 50, 1.96, 118.71,     708.6};  elements[50] = Tin;
+    Element Antimony    = {"Antimony",   "Sb", 51, 2.05, 121.76,     833.6};  elements[51] = Antimony;
+    Element Tellurium   = {"Tellurium",  "Te", 52, 2.1,  127.6,      869.3};  elements[52] = Tellurium;
+    Element Iodine      = {"Iodine",     "I",  53, 2.66, 126.9,     1008.4};  elements[53] = Iodine;
+    Element Xenon       = {"Xenon",      "Xe", 54, 2.6,  131.29,    1170.4};  elements[54] = Xenon;
+    Element Cesium      = {"Cesium",     "Cs", 55, 0.79, 132.91,     375.7};  elements[55] = Cesium;
+    Element Barium      = {"Barium",     "Ba", 56, 0.89, 137.33,     502.9};  elements[56] = Barium;
+    Element Hafnium     = {"Hafnium",    "Hf", 72, 1.3,  178.49,     658.5};  elements[57] = Hafnium;
+    Element Tantalum    = {"Tantalum",   "Ta", 73, 1.5,  180.95,     761.3};  elements[58] = Tantalum;
+    Element Rhenium     = {"Rhenium",    "Re", 75, 1.9,  186.21,     760.3};  elements[59] = Rhenium;
+    Element Osmium      = {"Osmium",     "Os", 76, 2.2,  190.2,      839.4};  elements[60] = Osmium;
+    Element Iridium     = {"Iridium",    "Ir", 77, 2.2,  192.22,     878.0};  elements[61] = Iridium;
+    Element Platinum    = {"Platinum",   "Pt", 78, 2.28, 195.08,     870.0};  elements[62] = Platinum;
+    Element Gold        = {"Gold",       "Au", 79, 2.54, 197.0,      890.2};  elements[63] = Gold;
+    Element Mercury     = {"Mercury",    "Hg", 80, 2.0,  200.59,    1007.1};  elements[64] = Mercury;
+    Element Thallium    = {"Thallium",   "Tl", 81, 1.62, 204.38,     589.3};  elements[65] = Thallium;
+    Element Lead        = {"Lead",       "Pb", 82, 2.33, 207.0,      715.6};  elements[66] = Lead;
+    Element Bismuth     = {"Bismuth",    "Bi", 83, 2.02, 208.98,     703.3};  elements[67] = Bismuth;
+    Element Polonium    = {"Polonium",   "Po", 84, 2.0,  208.98,     812.1};  elements[68] = Polonium;
+    Element Astatine    = {"Astatine",   "At", 85, 2.2,  209.987,    916.6};  elements[69] = Astatine;
+    Element Radon       = {"Radon",      "Rn", 86, 2.2,  222.02,    1036.7};  elements[70] = Radon;
+    Element Francium    = {"Francium",   "Fr", 87, 0.7,  223.02,     376.3};  elements[71] = Francium;
+    Element Radium      = {"Radium",     "Ra", 88, 0.9,  225.03,     509.3};  elements[72] = Radium;
+    // Element Rutherfordium - incomplete data
+    // Element Dubnium - incomplete data
+    // Element Seaborgium - incomplete data
+    // Element Bohrium - incomplete data
+    // Element Hassium - incomplete data
+    // Element Meitnerium - incomplete data
+    // Element Darmstadtium - incomplete data
+    // Element Roentgenium - incomplete data
+    // Element Cupernicium - incomplete data
+    // Element Nihonium - incomplete data
+    // Element Flerovium - incomplete data
+    // Element Moscovium - incomplete data
+    // Element Livermoreium - incomplete data
+    // Element Tennessine - incomplete data
+    // Element Oganesson - incomplete data
 }
 
 PeriodicTable::~PeriodicTable() {
